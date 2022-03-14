@@ -6,6 +6,12 @@ registerApplication({
   activeWhen: ["/"]
 });
 
+registerApplication({
+  name: "@weincode/mf-main",
+  app: () => System.import("@weincode/mf-main"),
+  activeWhen: ["/"]
+});
+
 start({
   urlRerouteOnly: true,
 });
