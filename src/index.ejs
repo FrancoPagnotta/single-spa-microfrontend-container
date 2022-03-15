@@ -53,7 +53,8 @@
       "imports": {
         "@weincode/root-config": "//localhost:9000/weincode-root-config.js",
         "@weincode/mf-header": "//localhost:4200/main.js",
-        "@weincode/mf-main": "//localhost:1202/main.js"
+        "@weincode/mf-main": "//localhost:4201/main.js",
+        "@weincode/mf-footer": "//localhost:4202/main.js"
       }
     }
   </script>
@@ -75,6 +76,15 @@
   <% } %>
 </head>
 <body>
+  <header>
+    <section id="single-spa-application:@weincode/mf-header"></section>
+  </header>
+  <main>
+    <section id="single-spa-application:@weincode/mf-main"></section>
+  </main>
+  <footer>
+    <section id="single-spa-application:@weincode/mf-footer"></section>
+  </footer>
   <noscript>
     You need to enable JavaScript to run this app.
   </noscript>

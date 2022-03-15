@@ -12,6 +12,12 @@ registerApplication({
   activeWhen: ["/"]
 });
 
+registerApplication({
+  name: "@weincode/mf-footer",
+  app: () => System.import("@weincode/mf-footer"),
+  activeWhen: ["/"]
+});
+
 start({
   urlRerouteOnly: true,
 });
