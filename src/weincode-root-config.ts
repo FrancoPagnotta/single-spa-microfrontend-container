@@ -18,6 +18,12 @@ registerApplication({
   activeWhen: ["/"]
 });
 
+registerApplication({
+  name: "@weincode/mf-login",
+  app: () => System.import("@weincode/mf-login"),
+  activeWhen: ["/"]
+});
+
 start({
   urlRerouteOnly: true,
 });
